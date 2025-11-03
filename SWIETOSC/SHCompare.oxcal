@@ -1,0 +1,30 @@
+﻿ Options()
+ {
+  Resolution=1;
+  RawData=TRUE;
+ };
+ Plot()
+ {
+  Curve("SHCal13","SHCal13.14c")
+  {
+   showCurve=TRUE;
+   showCurveRaw=FALSE;
+   color="lightgreen";
+  };
+  Curve("SHKauri16Raw","SHKauri16Raw.14c")
+  {
+   showCurve=FALSE;
+   showCurveRaw=TRUE;
+   color="grey";
+   marker="circle";
+  };
+  Curve("SHKauri16","SHKauri16.14c")
+  {
+   showCurve=TRUE;
+   showCurveRaw=FALSE;
+   color="green";
+   marker="circle";
+  };
+  Axis(calBP(13200), calBP(11200));
+ };
+  

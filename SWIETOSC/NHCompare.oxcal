@@ -1,0 +1,29 @@
+﻿ Options()
+ {
+  Resolution=1;
+  RawData=TRUE;
+ };
+ Plot()
+ {
+  Curve("IntCal13","IntCal13.14c")
+  {
+   showCurve=TRUE;
+   showCurveRaw=FALSE;
+   color="red";
+  };
+  Curve("NHPine16Raw","NHPine16Raw.14c")
+  {
+   showCurve=FALSE;
+   showCurveRaw=TRUE;
+   color="grey";
+   marker="circle";
+  };
+  Curve("NHPine16","NHPine16.14c")
+  {
+   showCurve=TRUE;
+   showCurveRaw=FALSE;
+   color="brown";
+  };
+  Axis(calBP(13200), calBP(11200));
+ };
+  
